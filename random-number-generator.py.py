@@ -15,7 +15,8 @@ def get_hint(secret, guess):
     
     elif diff <= 30:
         direction = "higher" if secret > guess else "lower"
-        return f"Not quite. You're a bit {direction}."
+        return f"Not quite. Go a bit {direction}."
+
     else:
         if secret > guess:
             return " Too low! Its Way higher than that."
