@@ -49,8 +49,8 @@ def play_game():
             print(" Please enter a valid whole number.\n")
             continue
 
-        if guess < 0 or guess > 100:
-            print("Nop:Number must be between 0 and 100.\n")
+        if guess < 1 or guess > 100:
+            print("Nop:Number must be between 1 and 100.\n")
             continue
 
         attempts += 1
