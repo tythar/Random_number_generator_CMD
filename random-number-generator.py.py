@@ -23,8 +23,8 @@ def get_hint(secret, guess):
             return "Too high! Way lower than that."
 
 def play_game():
-    max_guess = 10
-    secret_number = random.randint(0, 100)
+    max_guess = 7
+    secret_number = random.randint(1, 100)
     attempts = 0
 
     print("\n")
