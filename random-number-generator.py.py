@@ -29,7 +29,7 @@ def play_game():
 
     print("\n")
 
-    print("   NUMBER GUESSING GAME  🎯")
+    print("   NUMBER GUESSING GAME  ")
     print("\n")
     
     print(f"A secret number between 1 and 100 is chosen, Guess what it is.")
