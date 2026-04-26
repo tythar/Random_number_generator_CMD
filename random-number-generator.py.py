@@ -50,7 +50,7 @@ def play_game():
             continue
 
         if guess < 1 or guess > 100:
-            print("Nop:Number must be between 1 and 100.\n")
+            print("No number must be between 1 and 100.\n")
             continue
 
         attempts += 1
