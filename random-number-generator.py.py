@@ -29,7 +29,7 @@ def play_game():
 
     print("\n")
 
-    print("   NUMBER GUESSING GAME ")
+    print("   NUMBER GUESSING GAME  🎯")
     print("\n")
     
     print(f"A secret number between 1 and 100 is chosen, Guess what it is.")
@@ -46,18 +46,18 @@ def play_game():
             user_guess = input("Your guess: ").strip()
             guess = int(user_guess)
         except ValueError:
-            print("⚠️  Please enter a valid whole number.\n")
+            print(" Please enter a valid whole number.\n")
             continue
 
-        if guess < 1 or guess > 100:
-            print("Number must be between 1 and 100.\n")
+        if guess < 0 or guess > 100:
+            print("Nop:Number must be between 0 and 100.\n")
             continue
 
         attempts += 1
 
         if guess == secret_number:
             print("\n")
-            print("🎉CONGRATULATIONS! You got it!")
+            print("CONGRATULATIONS! You got it!")
             print(f"    The number was: {secret_number}")
             print(f"    You guessed it in {attempts} attempt(s).")
             print("\n")
@@ -79,7 +79,7 @@ def main():
         play_game()
         again = input("Play again? (yes/no): ").strip().lower()
         if again not in ("yes", "y"):
-            print("\nThanks for playing! See you next time. 👋\n")
+            print("\nThanks for playing! See you next time. \n")
             break
 
 if __name__ == "__main__":
