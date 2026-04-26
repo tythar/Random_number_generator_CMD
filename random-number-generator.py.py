@@ -23,16 +23,16 @@ def get_hint(secret, guess):
             return "Too high! Way lower than that."
 
 def play_game():
-    max_guess = 10
-    secret_number = random.randint(0, 100)
+    max_guess = 7
+    secret_number = random.randint(1, 100)
     attempts = 0
 
     print("\n")
 
-    print("   NUMBER GUESSING GAME  🎯")
+    print("   NUMBER GUESSING GAME ")
     print("\n")
     
-    print(f"A secret number between 0 and 100 is chosen, Guess what it is.")
+    print(f"A secret number between 1 and 100 is chosen, Guess what it is.")
     print("\n")
 
     print(f"You have {max_guess} guesses. Good luck!\n")
@@ -49,8 +49,8 @@ def play_game():
             print("⚠️  Please enter a valid whole number.\n")
             continue
 
-        if guess < 0 or guess > 100:
-            print("Nop:Number must be between 0 and 100.\n")
+        if guess < 1 or guess > 100:
+            print("Number must be between 1 and 100.\n")
             continue
 
         attempts += 1
