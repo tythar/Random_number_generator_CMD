@@ -29,7 +29,7 @@ def play_game():
 
     print("\n")
 
-    print("   NUMBER GUESSING GAME  🎯")
+    print(" NUMBER GUESSING GAME. ")
     print("\n")
     
     print(f"A secret number between 1 and 100 is chosen, Guess what it is.")
@@ -49,7 +49,7 @@ def play_game():
             print(" Please enter a valid whole number.\n")
             continue
 
-        if guess < 0 or guess > 100:
+        if guess < 1 or guess > 100:
             print("Nop:Number must be between 0 and 100.\n")
             continue
 
